@@ -8,8 +8,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        color: Color.fromARGB(255, 68, 62, 62),
+        theme: ThemeData(
+          primaryColor: Color.fromARGB(255, 68, 62, 62),
+        ),
         title: 'QT solutions',
-        home: Task2());
+        home: Screen1());
   }
 }
